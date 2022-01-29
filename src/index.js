@@ -7,6 +7,10 @@ const mongoUrl = `mongodb://${config.mongo.host}:${config.mongo.port}/`
 const PORT = 3001
 const mongoClient = new MongoClient(mongoUrl)
 
+fastify.register(require('fastify-cors'), {
+  // put your options here
+})
+
 fastify.get('/linky', async (request, reply) => {
   try {
     const db = mongoClient.db(config.mongo.db)
