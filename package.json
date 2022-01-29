@@ -1,0 +1,24 @@
+{
+  "name": "telemetry-mongodb",
+  "version": "1.0.0",
+  "description": "Read telemetry data on a MQTT broker &amp; save them into mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wifsimster/telemetry-mongodb.git"
+  },
+  "author": "Wifsimster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wifsimster/telemetry-mongodb/issues"
+  },
+  "homepage": "https://github.com/Wifsimster/telemetry-mongodb#readme",
+  "dependencies": {
+    "fastify": "^3.27.0",
+    "mongodb": "^4.3.0",
+    "mqtt": "^4.3.4"
+  }
+}
