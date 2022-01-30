@@ -30,7 +30,9 @@ fastify.get('/teleinfo', async (request, reply) => {
     const options = {
       sort,
       projection: {
+        _id: 0,
         createdAt: 1,
+        apparentPower: 1,
         instantaneousIntensity01: 1,
         instantaneousIntensity02: 1,
         instantaneousIntensity03: 1,
