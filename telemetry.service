@@ -1,0 +1,17 @@
+[Unit]
+
+Description=Telemetry
+
+After=network-online.target
+
+[Service]
+
+ExecStart=node /usr/local/telemetry/index.js
+
+Restart=on-failure
+
+User=pi
+
+[Install]
+
+WantedBy=multi-user.target
