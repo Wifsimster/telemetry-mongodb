@@ -10,7 +10,7 @@ ExecStart=node /usr/local/telemetry-mongodb/src/index.js
 
 Restart=on-failure
 
-User=pi
+User=root
 
 [Install]
 
