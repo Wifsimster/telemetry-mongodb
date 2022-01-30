@@ -1,5 +1,5 @@
 # telemetry-mongodb
-Read telemetry data on a MQTT broker &amp; save them into a MongoDB server.
+Read telemetry data from a MQTT broker &amp; save them into a MongoDB server.
 
 To be used with the project [teleinfo](https://github.com/Wifsimster/teleinfo).
 ## Description
@@ -14,3 +14,7 @@ Return the last buffer of teleinfo from MongoDB server.
 ### GET /teleinfo?sort=createdAt&order=-1&limit=100
  
  Return an array of teleinfo from MongoDB server.
+
+ ## Settings
+
+ You need to edit the **config.js** file at the project root.
