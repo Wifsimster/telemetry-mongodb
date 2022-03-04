@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/Wifsimster/telemetry-mongodb#readme",
   "dependencies": {
-    "fastify": "^3.27.0",
-    "fastify-cors": "^6.0.2",
-    "mongodb": "^4.3.0",
-    "mqtt": "^4.3.4"
+    "fastify": "^3.27.2",
+    "fastify-cors": "^6.0.3",
+    "mongodb": "^4.4.1",
+    "mqtt": "^4.3.6"
   }
 }
