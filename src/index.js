@@ -43,13 +43,13 @@ fastify.get('/teleinfo', async (request, reply) => {
       limit: request.query.limit ?? 100,
     }
 
-    const cursor = linky.find({ createdAt: { $exists: true } }, options)
+    const cursor = linky
+      .find({ createdAt: { $exists: true } }, options)
+      .allowDiskUse(true)
 
-    if ((await cursor.count()) === 0) {
-      return 'No documents found !'
-    }
+    let results = await cursor.toArray()
 
-    return await cursor.toArray()
+    return results
   } catch (err) {
     return err
   }
